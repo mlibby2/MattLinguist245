@@ -1,0 +1,6 @@
+.sprword {
+	text-align: left;
+	display : inline;
+	visibility: hidden;
+	position: fixed;
+}
