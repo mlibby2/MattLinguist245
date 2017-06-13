@@ -16,3 +16,5 @@ I believe we will not confirm the hypothesis - I don't think there will be a sta
 
 RESULTS
 The results of this replication disagree with the major finding of the original paper by Carreiras et al., namely that a mismatch between the gender of an anaphor and the stereotyped gender of its antecedent will impact comprehension in reading tasks. Instead, the replication found that anaphors pointing to neutral antecedents are harder to process than those pointing to gender-stereotyped antecedents, and that there is no significant difference in comprehension between match and mismatch conditions. 
+
+Find replication study and original study in docs folder. Find html/js/css files in experiment folder. Find datasets in data folder. Find R script and graphs in results folder.
