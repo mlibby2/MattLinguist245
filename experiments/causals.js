@@ -13,9 +13,7 @@ function startsWith(str, substrings) {
 }
 
 function advanceWord(word_id) {
-  //$(".sprword").hide();
   $(".sprword").css('visibility','hidden');
-  //$("#"+word_id).show();
   $("#"+word_id).css('visibility','visible');
   exp.word_start = Date.now();
   console.log("got in here "+word_id);
@@ -35,8 +33,7 @@ function make_slides(f) {
   slides.instructions = slide({
     name : "instructions",
     start: function() {
-      //$(".err").hide();
-      //rewrite total-num in html with variable exp.nTrials (equals 4 later)
+      //rewrite total-num in html with variable exp.nTrials 
       $("#total-num").html(exp.nTrials);
      },
     button : function() {
@@ -109,8 +106,7 @@ function make_slides(f) {
   slides.start_screen = slide ({
     name : "start_screen",
     start: function() {
-      //$(".err").hide();
-      //rewrite total-num in html with variable exp.nTrials (equals 4 later)
+      //rewrite total-num in html with variable exp.nTrials
       $("#total-num").html(exp.nTrials);
     },
     button : function() {
@@ -234,16 +230,6 @@ function make_slides(f) {
 /// init ///
 function init() {
 
-  // repeatWorker = false;
-  // (function(){
-  //     var ut_id = "mht-causals-20170222";
-  //     if (UTWorkerLimitReached(ut_id)) {
-  //       $('.slide').empty();
-  //       repeatWorker = true;
-  //       alert("You have already completed the maximum number of HITs allowed by this requester. Please click 'Return HIT' to avoid any impact on your approval rating.");
-  //     }
-  // })();
-
   exp.trials = [];
   exp.catch_trials = [];
   exp.all_stims = [];
@@ -276,24 +262,11 @@ function init() {
   }
   ];
 
-
-
-
-  // // exp.condition = _.sample(["prior","speaker","speaker","speaker","speaker","listener"])
-  // exp.condition = "speaker"
   exp.nTrials = maleSet.length + neutralSet.length + femaleSet.length;
 
   var shuffledMale = _.shuffle(maleSet);
   var shuffledNeutral = _.shuffle(neutralSet);
   var shuffledFemale = _.shuffle(femaleSet);
-
-
-
-  // exp.stims = [];
-  // var shuffledDists = _.shuffle(distributions);
-  // var frequencies = _.shuffle(tasks.speaker.frequencies);
-  // var labels = _.shuffle(creatureNames);
-  // var planets = _.shuffle(["X137","A325","Z142","Q681"])
 
   for (var i=0; i<maleSet.length; i++) {
       var pronoun = "He";
@@ -361,8 +334,7 @@ function init() {
   //make corresponding slides:
   exp.slides = make_slides(exp);
 
-  exp.nQs = utils.get_exp_length(); //this does not work if there are stacks of stims (but does work for an experiment with this structure)
-                    //relies on structure and slides being defined
+  exp.nQs = utils.get_exp_length();
 
   $('.slide').hide(); //hide everything
 
