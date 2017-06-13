@@ -1,8 +1,7 @@
 ---
 title: "Carreias Data Analysis"
 author: "mlibby2"
-date: "May 26, 2017"
-output: html_document
+date: "June 13, 2017"
 ---
 
 # Load necessary libraries and data
