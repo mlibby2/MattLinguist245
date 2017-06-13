@@ -11,8 +11,8 @@ var maleSet = [
     weight: "1.24",
    },
   {
-    profession: "soccer player",
-    statement1: "The soccer player spent hours in the whirlpool each day.",
+    profession: "football player",
+    statement1: "The football player spent hours in the whirlpool each day.",
     statement2: " had injured an ankle, and the whirlpool eased the pain.",
     statements: ["The soccer player spent hours in the whirlpool each day.", " had injured an ankle, and the whirlpool eased the pain."],
     question: "Did the soccer player spend hours in a whirlpool?",
